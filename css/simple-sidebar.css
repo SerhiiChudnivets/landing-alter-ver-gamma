@@ -1,0 +1,251 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url('../img/main-top-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+ padding-left: 15px;
+ padding-right: 15px;
+ padding-bottom: 15px;
+ padding-top: 0px;
+
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media(min-width:768px) {
+  #wrapper {
+    padding-left: 0;
+  }
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  #page-content-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+
+
+.bg-custom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: rgba(2, 4, 2, 0.5);
+  border-radius: 10px;
+}
+
+.btn-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+.pad-x-25 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.icons>a>i {
+  width: 32px;
+  height: 32px;
+  margin-left: 36%;
+  vertical-align: middle;
+  padding-top: 9px;
+  color: white;
+}
+
+.icons>a {
+  border-radius: 50%;
+  background: #002e66;
+}
+
+.list_middle {
+  list-style: none;
+  text-align: end;
+  font-family: 'Source Sans Pro';
+}
+
+.stat {
+  width: 32px;
+  height: 32px;
+}
+
+.img-stat {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.pad {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.pad-x-25 {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  border-radius: 10px 10px 0px 0px;
+}
+.brt-10{
+  border-radius: 10px 10px 0px 0px;
+}
+.brb-10 {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.list {
+  list-style: none;
+  background: rgba(255, 255, 255, 0.7)
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+#contact {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media(min-width:320px)and (max-width:767px) {
+  #buttons {
+    flex-direction: column;
+  }
+  #call{
+    font-size:17px;
+    margin-right: 0px !important;
+  }
+  #logo{ display: flex;
+  justify-content: center;
+  }
+  #logo-prozorro{ display: flex;
+    justify-content: center;
+    }
+  #contact-face{
+    display: flex;
+    justify-content: center !important;
+  }  
+}
+.bg-telegram{
+  background-image: url(../img/blok2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 43px;
+}
